@@ -31,6 +31,7 @@ Role X = Creating Dashboards on Tableau or HTML
 
 **Where to find datasets:**
 CPI dataset found on https://www.bls.gov/cpi/
+
 Case-Shiller Home Price Index found on https://fred.stlouisfed.org/series/CSUSHPINSA#0
 
 
