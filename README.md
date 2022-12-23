@@ -9,13 +9,13 @@
 - How does the inflation rate affect housing prices? 
 
 ##### SUB QUESTIONS:
--How do the housing prices compare year over year  to the inflation rate year over year?
+- How do the housing prices compare year over year  to the inflation rate year over year?
 
--Does the inflation rate affect the price of a home?
+- Does the inflation rate affect the price of a home?
 
--How does inflation rate affect the buying power of homebuyers?
+- How does inflation rate affect the buying power of homebuyers?
 
--What is the ideal inflation rate or inflation period to purchase a home?
+- What is the ideal inflation rate or inflation period to purchase a home?
 
 Role X = Creating Dashboards on Tableau or HTML
 
