@@ -7,7 +7,7 @@
 
 ##### MAIN QUESTION: 
 - How does the inflation rate affect housing prices? 
--
+
 ##### SUB QUESTIONS:
 -How do the housing prices compare year over year  to the inflation rate year over year?
 
