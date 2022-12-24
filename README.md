@@ -39,7 +39,7 @@ Case-Shiller Home Price Index found on https://fred.stlouisfed.org/series/CSUSHP
 
 ### DATABASE MODEL:
 
-[PASTE ERD DIAGRAM HERE]
+![ERD DIAGRAM](https://github.com/dpTuttle/final_project/blob/main/Resources/ERD_Diagram_DB.png)
 
 
 
