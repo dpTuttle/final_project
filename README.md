@@ -55,7 +55,6 @@ Case-Shiller Home Price Index found on https://fred.stlouisfed.org/series/CSUSHP
 - PgAdmin
 - AWS?
 - SQLite
-- R
 
 
 
