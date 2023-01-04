@@ -48,6 +48,16 @@ Case-Shiller Home Price Index found on https://fred.stlouisfed.org/series/CSUSHP
 ![ML MODEL](https://github.com/dpTuttle/final_project/blob/main/Resources/ML_Model.png)
 
 
+### Technology Used
+- Pandas
+- Python
+- Tableau 
+- PgAdmin
+- AWS?
+- SQLite
+- R
+
+
 
 
 
