@@ -19,7 +19,7 @@
 
 Role X = Creating Dashboards on Tableau or HTML
 
-![IMAGE_SET](https://github.com/dpTuttle/final_project/blob/main/Resources/Teams_Assign.png)
+![IMAGE_SET](https://github.com/dpTuttle/final_project/blob/main/Segment_1_Deliverables/teams_assign.png)
 
 - Square = Irene Hoang
 
