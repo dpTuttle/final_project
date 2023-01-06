@@ -4,7 +4,6 @@
 
 ### Google Slide Link: https://docs.google.com/presentation/d/1pzblo4LLJfESG_tqYN_aj5bdn-KawvwrXwqA17UNVBU/edit?usp=sharing 
 
-
 ### QUESTIONS TO ANSWER: 
 
 ##### MAIN QUESTION: 
