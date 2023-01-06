@@ -2,7 +2,7 @@
 
 ### SELECTED TOPIC: Housing Prices vs Inflation  
 
-### Google Slide Link: https://docs.google.com/presentation/d/1pzblo4LLJfESG_tqYN_aj5bdn-KawvwrXwqA17UNVBU/edit?usp=sharing
+### Google Slide Link: https://docs.google.com/presentation/d/1pzblo4LLJfESG_tqYN_aj5bdn-KawvwrXwqA17UNVBU/edit?usp=sharing 
 
 ### QUESTIONS TO ANSWER: 
 
@@ -20,7 +20,7 @@
 
 Role X = Creating Dashboards on Tableau or HTML
 
-![IMAGE_SET](https://github.com/dpTuttle/final_project/blob/main/Resources/Teams_Assign.png)
+![IMAGE_SET](https://github.com/dpTuttle/final_project/blob/main/Segment_1_Deliverables/teams_assign.png)
 
 - Square = Irene Hoang
 
@@ -40,16 +40,16 @@ Case-Shiller Home Price Index found on https://fred.stlouisfed.org/series/CSUSHP
 
 ### DATABASE MODEL:
 
-![ERD DIAGRAM](https://github.com/dpTuttle/final_project/blob/main/Resources/ERD_Diagram_DB.png)
+![ERD DIAGRAM](https://github.com/dpTuttle/final_project/blob/main/Segment_1_Deliverables/ERD_Diagram_DB.png)
 
 
 
 ### MACHINE LEARNING MODEL:
 
-![ML MODEL](https://github.com/dpTuttle/final_project/blob/main/Resources/ML_Model.png)
+![ML MODEL](https://github.com/dpTuttle/final_project/blob/main/Segment_1_Deliverables/ml_model.png)
 
 
-### Technology Used
+### TECHNOLOGY USED:
 - Pandas
 - Python
 - Tableau 
