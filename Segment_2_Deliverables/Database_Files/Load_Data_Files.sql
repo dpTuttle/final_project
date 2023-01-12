@@ -8,6 +8,7 @@ CREATE TABLE complete_ca_data AS
 	clean_merge_df."Population_Size",
 	clean_merge_df."Unemployment_Rate",
 	clean_merge_df."Median_Household_Income",
+	clean_merge_df."First_Time_Buyer_Rate",
 	median_house_df."CPI", median_house_df."Median_House_Price"
 	FROM clean_merge_df
 	INNER JOIN median_house_df
@@ -15,4 +16,6 @@ CREATE TABLE complete_ca_data AS
 	AND median_house_df."County" = clean_merge_df."County"
 	
 SELECT * FROM complete_ca_data
+
+DROP TABLE complete_ca_data
 	
