@@ -49,22 +49,25 @@ We used the three separate CSV files to import and connect the data into Elephan
 
 ## **Machine Learning Model**
 #### *Segment 2:*
+* Chosen Model: Scikit Linear Regression with Train_Test_Split
 
-Some of the analysis we have completed so far: 
-
-Correlation:
+Steps: 
+1. Final CSV Data was loaded into Pandas Dataframe and ‘County’ column was encoded for Machine Learning model	
+2. Using Seaborn, a correlation heatmap is generated to determine X Values for linear regression model
 
 <img width="500" alt="1" src="https://user-images.githubusercontent.com/110875578/212242079-e169ef95-8447-4631-af00-1452fc2c1127.png">
 
-BoxPlot:
+3. All variables listed were selected for linear regression model. ‘Year’ was excluded.
+	* X Value(s): Population Size, Unemployment Rate, County, Median Household Income, First Time Buyer Rate, CPI
+	* Y_Pred: House Price
 
 <img width="500" alt="2" src="https://user-images.githubusercontent.com/110875578/212242087-9a71937b-5b98-4ee7-a175-bb006cd15808.png">
 
-Testing vs Training Data:
+4. Data was split into X Train, Y Train, X Test, Y Test values based on percentage of each category in data set. Each category was had equal data rows (n = 19).
 
 <img width="500" alt="3" src="https://user-images.githubusercontent.com/110875578/212242094-24b9df5a-c566-463f-a239-e7664174de46.png">
 
-
+6. The linear regression model was chosen as it could compile all X-values and make a prediction of the Y with ease. This model, however, requires years of data that may not be available in all situations. 
 
 ## **Dashboard**
 #### *Segment 2:*
