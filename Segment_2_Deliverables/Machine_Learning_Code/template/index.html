@@ -1,0 +1,62 @@
+<!---Initialize Home Page--->
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+    </head>
+    <body>
+        <!---Initialize structure of Title and house picture--->
+        <div class = "title">
+            <h1>House Price Predictor</h1>
+            <img src="https://t3.ftcdn.net/jpg/01/41/00/12/360_F_141001216_6ZDLJQmehy1umZ22hkzCRaNaOWcrGNaD.jpg" class="house"/>
+        </div>
+        <!---Links/buttons to other websites--->
+        <div id = "menu-outer">
+            <div class = "table">
+                <ul id = "horizontal-list">
+                    <li><a href = "https://flask.palletsprojects.com/en/2.0.x/" target="_blank" class = "link"><span class = "titleLink">Python Flask</span></a></li>
+                    <li><a href = "https://scikit-learn.org/stable/modules/generated/sklearn.linear_model.LinearRegression.html" target="_blank" class = "link"><span class = "titleLink">Scikit-Learn</span></a></li>
+                </ul>
+            </div>
+        </div>
+        <!---Containerize main page for styling--->
+        <div class = "page">
+            <!---Containerize paragraph and form for styling--->
+            <div class = "container">
+                <div class = "intro">
+                    <b>
+                        <p class = "Note"><b>Note: Enter values which are reasonable to the context</b></p>
+                    </b>
+                </div>
+                <br>
+                <!---Initialize form structure and inputs, set method to "POST"--->
+                <form action = "{{url_for('predict')}}" method = "post" class = "info">
+                    <input type="text" id="county" name="County" placeholder="County" required="required"/><span style="color:red"> * </span>
+                    <br>
+                    <br>
+                    <input type="text" id="pop" name="Population Size" placeholder="Population Size" required="required"/><span style="color:red"> * </span>
+                    <br>
+                    <br>
+                    <input type="text" id="income" name="Median Household Income " placeholder="Median Household Income" required="required"/><span style="color:red"> * </span>
+                    <br>
+                    <br>
+                    <input type="text" id="rate" name="Umemployment Rate" placeholder="Unemployment Rate"/><span style="color:red" required="required"> * </span>
+                    <br>
+                    <br>
+                    <input type="text" id="ft_rate" name="First Time Homebuyer Rate" placeholder="First Time Homebuyer Rate"/><span style="color:red" required="required"> * </span>
+                    <br>
+                    <br>
+                    <input type="text" id="CPI" name="Consumer Price Index" placeholder="Consumer Price Index (for this year)"/><span style="color:red" required="required"> * </span>
+                    <br>
+                    <br>
+                    <button type="submit" class="btn">Predict</button>
+                </form>
+                <br> 
+                <!---Set placeholder for prediction output--->
+                <div class ="pred">
+                    <p class = "result"><b>{{ prediction_text }}</b></p>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
