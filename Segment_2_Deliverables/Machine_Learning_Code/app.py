@@ -1,5 +1,6 @@
 #Import main library
 import numpy as np
+import sys
 
 #Import Flask modules
 from flask import Flask, request, render_template
@@ -22,22 +23,21 @@ def home():
 @app.route('/', methods = ['POST'])
 def predict():
     
-    #obtain all form values and place them in an array, convert into integers
+    #obtain all form values and place them in an array
     features = [x for x in request.form.values()]
     #Combine them all into a final numpy array
     final_features = [np.array(features)]
+    print(final_features)
     #predict the price given the values inputted by user
     prediction = model.predict(final_features)
-    
-    #Round the output to 2 decimal places
-    output = round(prediction[0], 2)
-    
-    #If the output is negative, the values entered are unreasonable to the context of the application
-    #If the output is greater than 0, return prediction
-    if output < 0:
-        return render_template('index.html', prediction_text = "Predicted Price is negative, values entered not reasonable")
-    elif output >= 0:
-        return render_template('index.html', prediction_text = 'Predicted Price of the house is: ${}'.format(output))   
+    print(type(prediction[0]))
+
+    #Set output to prediction np array converted to int / divide by 1000
+    output = np.squeeze(prediction)[()]/1000
+
+    #Return prediction output as render with text displayed
+    return render_template('index.html', prediction_text = f"These variables will lead to a median house price of: ${output:,.2f} for this area.")
+
 
 #Run app
 if __name__ == "__main__":

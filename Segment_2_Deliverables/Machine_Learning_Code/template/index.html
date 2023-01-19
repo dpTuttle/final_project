@@ -3,11 +3,10 @@
 <html>
     <head>
         <meta charset="UTF-8">
-    </head>
     <body>
         <!---Initialize structure of Title and house picture--->
         <div class = "title">
-            <h1>House Price Predictor</h1>
+            <h1>House Price Estimator Based on Key Ecnonomic Variables</h1>
             <img src="https://t3.ftcdn.net/jpg/01/41/00/12/360_F_141001216_6ZDLJQmehy1umZ22hkzCRaNaOWcrGNaD.jpg" class="house"/>
         </div>
         <!---Links/buttons to other websites--->
@@ -31,22 +30,34 @@
                 <br>
                 <!---Initialize form structure and inputs, set method to "POST"--->
                 <form action = "{{url_for('predict')}}" method = "post" class = "info">
-                    <input type="text" id="county" name="County" placeholder="County" required="required"/><span style="color:red"> * </span>
+                    <input type="text" id="county" name="County" placeholder="Geographic Area" required="required" size="50"/><span style="color:red"> * </span>
+                    <br>
+                    <label for="county">Enter [0] for CA, [1] for Los Angeles, [2] for Riverside, [3] for San Diego, [4] for San Francisco</label>
                     <br>
                     <br>
-                    <input type="text" id="pop" name="Population Size" placeholder="Population Size" required="required"/><span style="color:red"> * </span>
+                    <input type="text" id="pop" name="Population Size" placeholder="Estimated Population Size" required="required" size="50"/><span style="color:red"> * </span>
+                    <br>
+                    <label for="pop">Enter population without commas or decimal points</label>
                     <br>
                     <br>
-                    <input type="text" id="income" name="Median Household Income " placeholder="Median Household Income" required="required"/><span style="color:red"> * </span>
+                    <input type="text" id="income" name="Median Household Income " placeholder="Estimated Median Household Income" required="required" size="50"/><span style="color:red"> * </span>
+                    <br>
+                    <label for="income">Enter Houshold Income without Commas or Decimals</label>
                     <br>
                     <br>
-                    <input type="text" id="rate" name="Umemployment Rate" placeholder="Unemployment Rate"/><span style="color:red" required="required"> * </span>
+                    <input type="text" id="rate" name="Umemployment Rate" placeholder="Estimated Unemployment Rate" required="required" size="50"/><span style="color:red"> * </span>
+                    <br>
+                    <label for="rate">Enter Any Rate (May Include Decimals)</label>
                     <br>
                     <br>
-                    <input type="text" id="ft_rate" name="First Time Homebuyer Rate" placeholder="First Time Homebuyer Rate"/><span style="color:red" required="required"> * </span>
+                    <input type="text" id="ft_rate" name="First Time Homebuyer Rate" placeholder="Estimated First Time Homebuyer Rate" required="required" size="50"/><span style="color:red"> * </span>
+                    <br>
+                    <label for="ft_rate">Enter Any Rate (May Include Decimals)</label>
                     <br>
                     <br>
-                    <input type="text" id="CPI" name="Consumer Price Index" placeholder="Consumer Price Index (for this year)"/><span style="color:red" required="required"> * </span>
+                    <input type="text" id="CPI" name="CPI" placeholder="Consumer Price Index (for this year)" required="required" size="50"/><span style="color:red"> * </span>
+                    <br>
+                    <label for="CPI">Enter a Number between 150 and 250</label>
                     <br>
                     <br>
                     <button type="submit" class="btn">Predict</button>
