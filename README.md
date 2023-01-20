@@ -9,7 +9,7 @@ https://docs.google.com/presentation/d/1pzblo4LLJfESG_tqYN_aj5bdn-KawvwrXwqA17UN
 Demetrice Tuttle, Vanessa Neang, Monzerrath Mazas, Irene Hoang
 
 ## **Project Topic**
-*Per the Los Angeles Almanac (https://www.laalmanac.com/economy/ec37.php) the median house price in LA County in 1992 was $214,005. The median house price in 2022 was $826,500 for the same county. This represents a 286% increase over 30 years.  Many factors may contribute to the rise in median house prices in a particular county. The goal of our project is to use Los Angeles. Riverside, San Diego and San Francisco counties as a sample and determine if population size, unemployment rate, median household income, the first time home buyer rate, and the Consumer Price Index influence median housing prices. If so, can these measures be used to predict the median house price in a particular county?*
+*Our team was tasked by the state of California to confirm which key economic variables contributed to median house prices as a way to drive their legislative agenda for 2023. Focus of this project was to evaluate population size, unemployment rate, median household income, first time home buyer rate, and the Consumer Price Index and provide the state with an ongoing tool for future evaluation to test different changes in each variable across California and the counties of Los Angeles, Riverside, San Diego, and San Francisco as the year progresses. The state’s goal is to increase homeowner value in the state beyond standard year of year equity building.*
 
 ## **Roles & Responsibilities**
 * Segment 1: 
@@ -19,12 +19,18 @@ Demetrice Tuttle, Vanessa Neang, Monzerrath Mazas, Irene Hoang
 	* X: Demetrice Tuttle - Responsible for Machine Learning Model Mockup
 
 * Segment 2: 
-  * Circle: Monzerrath Mazas - Responsible for creating data analysis charts
+  	* Circle: Monzerrath Mazas - Responsible for creating data analysis charts
 	* Square: Demetrice Tuttle - Responsible for Machine Learning Model
 	* Triangle: Vanessa Neang - Responsible for database
 	* X: Irene Hoang - Responsible for creating dashboard and Google Slides
-	* Communication Protocol: Utilize the Tuesday & Thursday classes as well as using our slack channel for anything else we need to connect on offline.
 
+* Segment 3: 
+  	* Circle: Irene Hoang - Create a dashboard to display your findings
+	* Square: Vanessa Neang - Complete peer reviews on the code
+	* Triangle: Monzerrath Mazas - Create a draft presentation to share with your class.
+	* X: Demetrice Tuttle - Perform a quality assurance check on project deliverables against rubric requirements, and test the code
+
+	
 ## **Data Sources**
 * We gathered the following data points from various sources for our analysis: 
 	* Year
@@ -35,15 +41,13 @@ Demetrice Tuttle, Vanessa Neang, Monzerrath Mazas, Irene Hoang
 	* Median House Price
 	* Consumer Price Index - Urban Consumers
 
-## **Technologies that will be Used**
-* Pandas, Python, Jupyter Notebook, Tableau, pgAdmin, SQLite
+## **Technologies that were Used**
+* Pandas, Python, Jupyter Notebook, Tableau, pgAdmin, SQLite, ElephantSQL, SciKit
 
 ## **Data Cleaning**
-#### *Segment 2:* 
 During the data exploration phase, we made a decision to focus on California and the counties of Los Angeles, Riverside, San Diego, and San Francisco. The data sources had a wide range of data across many years so we focused on the year range of 2003 - 2021. After cleaning the data, it resulted in three separate CSV files with the date range of 2003 - 2022. 
 
 ## **Database**
-#### *Segment 2:* 
 We used the three separate CSV files to import and connect the data into ElephantSQL. The three tables were merged within SQL to a final complete_housing_data table. The Updated ERD Diagram for the model is as follows: 
 <img width="791" alt="Segment2_ERD_diagram" src="https://user-images.githubusercontent.com/110875578/212241997-b5ded318-6195-4b09-8953-daf7597333dc.png">
 
@@ -69,9 +73,13 @@ Steps:
 
 6. The linear regression model was chosen as it could compile all X-values and make a prediction of the Y with ease. This model, however, requires years of data that may not be available in all situations. 
 
+7. For Segment 3, we did not re-adjust the model as the testing and training scores were both well above 90%. (Training Score = 0.95817 & Testing Score = 0.96215)
+
+8. Ultimately, the model addresses the clients need to evaluate key economic variables against median household prices for a specific geographic area. 
+
+
 ## **Dashboard**
-#### *Segment 2:*
-We will be utilizing Tableau and incorporating the following views to determine trends from our data: 
+We utilized Tableau and incorporated the following views to determine trends from our data: 
 * Standard Views: 
   * Population of each county
   * Median House Income by Year
@@ -82,6 +90,7 @@ We will be utilizing Tableau and incorporating the following views to determine 
 * Correlation Analysis of Multiple Metrics
   * Median House Income vs First Time Buyer Rate
   * Median House Income vs Median House Price
+  * Median House Income vs CPI-U
   * Median House Price vs First Time Buyer Rate
   * Median House Price vs CPI-U
   * Median House Price vs Unemployment Rate
@@ -90,6 +99,11 @@ County filter will be utilized to compare data between Los Angeles, Riverside, S
 
 Link to Dashboard: https://public.tableau.com/app/profile/irene.shin/viz/A_Team_Final_Project/Dashboard1 
 
+
+## **Flask App**
+We built a tool for future evaluation to test different changes in each variable across California and the counties of Los Angeles, Riverside, San Diego, and San Francisco as the year progresses. This form takes in the inputs of population size, unemployment rate, median household income, first time home buyer rate, and the Consumer Price Index to predict the Median House Price.
+
+<img width="632" alt="A000993E-FA5D-49D1-B00D-2EBE86007454" src="https://user-images.githubusercontent.com/110875578/213621712-dcd49af4-034a-4996-8b97-6a5110242807.png">
 
 
 
