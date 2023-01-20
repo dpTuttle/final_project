@@ -3,21 +3,30 @@
 <html>
     <head>
         <meta charset="UTF-8">
-    <body>
-        <!---Initialize structure of Title and house picture--->
-        <div class = "title">
-            <h1>House Price Estimator Based on Key Ecnonomic Variables</h1>
-            <img src="https://t3.ftcdn.net/jpg/01/41/00/12/360_F_141001216_6ZDLJQmehy1umZ22hkzCRaNaOWcrGNaD.jpg" class="house"/>
-        </div>
-        <!---Links/buttons to other websites--->
+    
+        <!---Tableau Dashboard--->
         <div id = "menu-outer">
             <div class = "table">
-                <ul id = "horizontal-list">
-                    <li><a href = "https://flask.palletsprojects.com/en/2.0.x/" target="_blank" class = "link"><span class = "titleLink">Python Flask</span></a></li>
-                    <li><a href = "https://scikit-learn.org/stable/modules/generated/sklearn.linear_model.LinearRegression.html" target="_blank" class = "link"><span class = "titleLink">Scikit-Learn</span></a></li>
+                <ul id = "horizontal-list">                    
+                    <div class='tableauPlaceholder' id='viz1674184930923' style='position: relative'><noscript><a href='#'><img alt='Dashboard 1 ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;A_&#47;A_Team_Final_Project&#47;Dashboard1&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='A_Team_Final_Project&#47;Dashboard1' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;A_&#47;A_Team_Final_Project&#47;Dashboard1&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='en-US' /><param name='filter' value='publish=yes' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1674184930923');                    var vizElement = divElement.getElementsByTagName('object')[0];                    if ( divElement.offsetWidth > 800 ) { vizElement.style.width='1100px';vizElement.style.height='2527px';} else if ( divElement.offsetWidth > 500 ) { vizElement.style.width='1100px';vizElement.style.height='2527px';} else { vizElement.style.width='100%';vizElement.style.height='5227px';}                     var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
                 </ul>
             </div>
         </div>
+        <body>
+            <!---Initialize structure of Title and house picture--->
+            <div class = "title">
+                <h1>House Price Estimator Based on Key Ecnonomic Variables</h1>
+                <img src="https://t3.ftcdn.net/jpg/01/41/00/12/360_F_141001216_6ZDLJQmehy1umZ22hkzCRaNaOWcrGNaD.jpg" class="house"/>
+            </div>
+            <!---Links/buttons to other websites--->
+            <div id = "menu-outer">
+                <div class = "table">
+                    <ul id = "horizontal-list">
+                        <li><a href = "https://flask.palletsprojects.com/en/2.0.x/" target="_blank" class = "link"><span class = "titleLink">Python Flask</span></a></li>
+                        <li><a href = "https://scikit-learn.org/stable/modules/generated/sklearn.linear_model.LinearRegression.html" target="_blank" class = "link"><span class = "titleLink">Scikit-Learn</span></a></li>
+                    </ul>
+                </div>
+            </div>
         <!---Containerize main page for styling--->
         <div class = "page">
             <!---Containerize paragraph and form for styling--->
@@ -47,12 +56,12 @@
                     <br>
                     <input type="text" id="rate" name="Umemployment Rate" placeholder="Estimated Unemployment Rate" required="required" size="50"/><span style="color:red"> * </span>
                     <br>
-                    <label for="rate">Enter Any Rate (May Include Decimals)</label>
+                    <label for="rate">Enter Unemployment Rate (May Include Decimals)</label>
                     <br>
                     <br>
                     <input type="text" id="ft_rate" name="First Time Homebuyer Rate" placeholder="Estimated First Time Homebuyer Rate" required="required" size="50"/><span style="color:red"> * </span>
                     <br>
-                    <label for="ft_rate">Enter Any Rate (May Include Decimals)</label>
+                    <label for="ft_rate">Enter First Time Homebuyer Rate (May Include Decimals)</label>
                     <br>
                     <br>
                     <input type="text" id="CPI" name="CPI" placeholder="Consumer Price Index (for this year)" required="required" size="50"/><span style="color:red"> * </span>
@@ -69,5 +78,6 @@
                 </div>
             </div>
         </div>
+        
     </body>
 </html>
