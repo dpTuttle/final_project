@@ -89,6 +89,7 @@ We built a tool for future evaluation to test different changes in each variable
 <img width="632" alt="A000993E-FA5D-49D1-B00D-2EBE86007454" src="https://user-images.githubusercontent.com/110875578/213621712-dcd49af4-034a-4996-8b97-6a5110242807.png">
 
 ## **Conclusion**
+With analyzing population size, unemployment rate, median household income, first time home buyer rate, and the Consumer Price Index, we saw the impact that these economic variables have on the median house price and it encourages people to rent rather than to buy houses. It would be ideal that the government focused on improving these variables in median household income because it can promote owning houses rather than buying and it can also benefit those who own houses by increasing home value. 
 
 
 
